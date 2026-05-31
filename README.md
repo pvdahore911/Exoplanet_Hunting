@@ -1,22 +1,22 @@
 # Exoplanet_Hunting: Automated Astronomer
-In this project, I have built a machine learning model that acts as an automated astronomer, looking at the data of NASA's Kepler space telescope to distinguish between a true exoplanet and a false alarm.
+In this project, I have built a ML model that acts as an automated astronomer, looking at the data of NASA's Kepler space telescope to distinguish between a true exoplanet and a false alarm.
 
 ## 📌 Project Overview
-When an exoplanet crosses in front of its host star, the star's brightness drops slightly. NASA’s Kepler Space Telescope recorded thousands of these light-dimming events, but many of them are false alarms. 
+When an exoplanet crosses in front of its host star, the star's brightness drops slightly. NASA’s Kepler Space Telescope recorded thousands of these light-dimming events, but many of them are just false alarms. 
 
-This project builds a Machine Learning pipeline that acts as an "automated astronomer." It analyzes the optical data and physical measurements from the Kepler dataset to classify whether a signal is a **Confirmed Exoplanet** or a **False Positive**.
+My ML project analyzes the optical data and physical measurements from the Kepler dataset to classify whether a signal is a **Confirmed Exoplanet** or a **False Positive**.
 
 ## 🛠️ Tools used
-* **Language:** Python
-* **Data Manipulation:** Pandas, NumPy
-* **Machine Learning:** Scikit-Learn, XGBoost
-* **Handling Imbalanced Data:** SMOTE (imbalanced-learn)
-* **Data Visualization:** Matplotlib, Seaborn
+* *Language:* Python
+* *Data Manipulation:* Pandas, NumPy
+* *Machine Learning:* Scikit-Learn, XGBoost
+* *Handling Imbalanced Data:* SMOTE (imbalanced-learn)
+* *Data Visualization:* Matplotlib, Seaborn
 
 ## 📊 Dataset
 The project uses the `cumulative.csv` dataset from the Kepler space mission. 
 * **Challenge:** The dataset is heavily imbalanced (there are far more false alarms than real planets in space). 
-* **Solution:** I applied **SMOTE (Synthetic Minority Over-sampling Technique)** to balance the training data, ensuring the model doesn't become biased toward guessing "False Positive."
+* **Solution:** I applied *SMOTE (Synthetic Minority Over-sampling Technique)* to balance the training data, ensuring the model doesn't become biased toward guessing "False Positive".
 
 ## 🚀 ML Models Tested
 I trained and evaluated three different classification models:
@@ -24,7 +24,7 @@ I trained and evaluated three different classification models:
 2. XGBoost Classifier
 3. Multi-Layer Perceptron (Simple Neural Network)
 
-I then optimized the best-performing model using `RandomizedSearchCV` to find the best hyperparameters.
+Then I optimized the best-performing model using `RandomizedSearchCV` to find the best parameters.
 
 ## 🏆 Final Results
 
